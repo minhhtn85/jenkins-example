@@ -6,9 +6,9 @@ pipeline {
         sh 'ls -la' 
       }
     }
-    stage('Build') {
+    stage('Test') {
       steps { 
-        sh 'yarn start' 
+        sh 'yarn & yarn test' 
       }
     }
   }
