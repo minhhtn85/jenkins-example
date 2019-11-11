@@ -1,14 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('myStage'){
+    stage('Verified'){
       steps {
         sh 'ls -la' 
       }
     }
     stage('Test') {
       steps { 
-        sh 'yarn & yarn test' 
+        sh 'yarn install' 
       }
     }
   }
